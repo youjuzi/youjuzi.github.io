@@ -92,7 +92,13 @@ img {
   border-bottom: 1px solid #e94164;
   padding: 5px 0;
 }
-
+.name {
+  display: inline-block;
+  vertical-align: middle;
+  width: 277px;
+  height: 60px;
+  background: url('../images/name.png') 0 0 no-repeat;
+}
 #header_wrap img {
   margin: 50px auto 30px;
 }
