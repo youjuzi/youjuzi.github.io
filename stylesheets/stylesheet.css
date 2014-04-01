@@ -1,11 +1,15 @@
 body {
   box-sizing: border-box;
-  background: url('../images/geometry.png') repeat top;
+  /*background: url('../images/geometry.png') repeat top;*/
   color:#373737;
   font-size: 16px;
   font-family: 微软雅黑, 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+em {
+  display: inline-block;
+  vertical-align: middle;
 }
 h1, h2, h3, h4, h5, h6, p, dl {
   padding: 0;
@@ -16,7 +20,8 @@ h1 {
   font-size: 60px;
 }
 h3 {
-  margin: 55px auto 10px;
+  margin: 55px auto 20px;
+  padding-bottom: 10px;
   width: 200px;
   font-size: 30px;
   color: #e94164;
@@ -45,6 +50,7 @@ dt {
   border-bottom: 1px dashed #000;
 }
 dd {
+  margin: 0;
   margin-top: 20px;
 }
 dd a {
@@ -90,6 +96,37 @@ img {
 #header_wrap img {
   margin: 50px auto 30px;
 }
+.work-title {
+  width: 112px;
+  height: 17px;
+  background: url('../images/work-title.png') center center no-repeat;
+}
+.dl-title-content {
+  width: 120px;
+  height: 28px;
+  background: url('../images/dl-title-content.png') center center no-repeat;
+}
+.dl-title-self {
+  background-position: 0 0;
+}
+.dl-title-edu {
+  background-position: 0 -28px;
+}
+.dl-title-work {
+  background-position: 0 -55px;
+}
+.dl-title-projects {
+  height: 27px;
+  background-position: 0 -83px;
+}
+.dl-title-award {
+  height: 27px;
+  background-position: 0 -110px;
+}
+.dl-title-social {
+  height: 27px;
+  background-position: 0 -139px;
+}
 .project-title-icon {
   display: inline-block;
   margin-right: 10px;
@@ -118,23 +155,24 @@ img {
 }
 .social_wrap {
   margin: 0 auto;
-  width: 180px;
+  width: 220px;
 }
 .social-icon {
   display: inline-block;
-  width: 85px;
-  height: 85px;
+  margin: 0 10px;
+  width: 86px;
+  height: 86px;
   background: url('../images/social-icon.png') 0 0 no-repeat;
 }
 .icon-github {
   background-position: 0 0;
 }
 .icon-github:hover {
-  background-position: -85px 0;
+  background-position: -87px 0;
 }
 .icon-weibo {
-  background-position: 0 -85px;
+  background-position: 0 -86px;
 }
 .icon-weibo:hover {
-  background-position: -85px -85px;
+  background-position: -87px -86px;
 }
