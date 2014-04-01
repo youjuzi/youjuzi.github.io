@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  /*background: url('../images/geometry.png') repeat top;*/
+  background-color: #f2eff2;
   color:#373737;
   font-size: 16px;
   font-family: 微软雅黑, 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
@@ -11,7 +11,7 @@ em {
   display: inline-block;
   vertical-align: middle;
 }
-h1, h2, h3, h4, h5, h6, p, dl {
+h1, h2, h3, h4, h5, h6, p, dl, dt, dd {
   padding: 0;
   margin: 0;
   text-align: center;
@@ -20,12 +20,7 @@ h1 {
   font-size: 60px;
 }
 h3 {
-  margin: 55px auto 20px;
-  padding-bottom: 10px;
-  width: 200px;
   font-size: 30px;
-  color: #e94164;
-  border-bottom: 2px solid #e94164;
 }
 h5 {
   font-size: 18px;
@@ -38,38 +33,40 @@ p {
   line-height: 30px;
 }
 dl {
-  text-align: center;
-}
-section > dl {
   margin-top: 40px;
 }
 dt {
-  margin-bottom: 10px;
   font-size: 18px;
-  line-height: 40px;
-  border-bottom: 1px dashed #000;
 }
 dd {
-  margin: 0;
   margin-top: 20px;
 }
-dd a {
-  display: inline-block;
-  width: 190px;
-  height: 48px;
-  background: url('../images/href-icon.png') 0 0 no-repeat;
+/*-- 可访问性的文字隐藏 开始 --*/
+.visually_hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
-dd a:hover {
-  background-position: -191px 0;
+.transition,input,textarea {
+   transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
 }
 img {
   position: relative;
   display: block;
   margin: 0 auto;
-  max-width: 739px;
+  max-width: 200px;
   padding: 5px;
   border: 5px solid #f0c2cc;
-  border-radius: 739px;
+  border-radius: 100px;
 
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
@@ -85,6 +82,8 @@ img {
 #header_wrap {
   margin-top: 60px;
   text-align: center;
+}
+#header_wrap p {
   color: #e94164;
 }
 .line-border {
@@ -101,6 +100,22 @@ img {
 }
 #header_wrap img {
   margin: 50px auto 30px;
+}
+
+#main_content_wrap p {
+  color: #3a335f;
+}
+#main_content_wrap h3 {
+  margin: 55px auto 20px;
+  padding-bottom: 10px;
+  width: 200px;
+  color: #e94164;
+  border-bottom: 2px solid #e94164;
+}
+#main_content_wrap dt {
+  margin-bottom: 10px;
+  line-height: 40px;
+  border-bottom: 1px dotted #3b3460;
 }
 .work-title {
   width: 112px;
@@ -153,9 +168,17 @@ img {
 .icon-4 {
   background-position: -81px 0;
 }
-
+.href-icon {
+  display: inline-block;
+  width: 190px;
+  height: 48px;
+  background: url('../images/href-icon.png') 0 0 no-repeat;
+}
+.href-icon:hover {
+  background-position: -191px 0;
+}
 #footer_wrap {
-  margin-top: 50px;
+  margin-top: 150px;
   height: 150px;
   background: url('../images/footer-background.png') 0 bottom repeat-x;
 }
